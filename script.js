@@ -248,5 +248,7 @@ let btnVocab = document.getElementById('btnVocab')
 let vocab = document.getElementById('vocab')
 
 btnVocab.addEventListener('click', function() {
+    let audio = document.getElementById('clickSound')
+    audio.play()
     vocab.style.visibility = 'visible'
 })
