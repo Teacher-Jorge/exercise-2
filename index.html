@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Present Simple - Exercise 1</title>
+</head>
+<body>
+    <audio id="clickSound" src="assets/click.mp3"></audio>
+    <audio id="correctSound" src="assets/right.wav"></audio>
+    <div class="heading"><h2>Complete the sentences</h2></div>
+    <div class="score"><h2>score: <span id="score" class="score-number">0</span> </h2></div>
+
+    <div class="container">
+        <div class="names">Jack:</div>
+        <div class="lines">Hi! What <span id="word1" class="words">___</span> your name?</div>
+        <div  class="checks"><img id="check1" class="check" src="assets/check.png" alt=""></div>
+        <div class="item"></div>
+
+        <div class="button-container">
+            <button id="btn1Am" class="buttons">am</button>
+            <button id="btn1Is" class="buttons">is</button>
+            <button id="btn1Are" class="buttons">are</button>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
