@@ -143,7 +143,7 @@ btn3Is.addEventListener('click', function() {
     document.getElementById('score').innerHTML = value
     btn3Is.disabled = 'true'
     btn3Am.disabled = 'true'
-    btn1Are.disabled = 'true'
+    btn3Are.disabled = 'true'
 })
 
 //Line 4
@@ -170,7 +170,7 @@ btn4Am.addEventListener('click', function() {
 btn4Is.addEventListener('click', function() {
     let audio = document.getElementById('clickSound')
     audio.play()
-    word4.textContent = 'are'
+    word4.textContent = 'is'
     word4.style.color = 'red'
     btn4Is.style.backgroundColor = 'red'
     btn4Is.style.color = 'yellow'
@@ -242,4 +242,11 @@ btn5Am.addEventListener('click', function() {
     btn5Am.disabled = 'true'
     btn5Is.disabled = 'true'
     btn2Are.disabled = 'true'
+})
+
+let btnVocab = document.getElementById('btnVocab')
+let vocab = document.getElementById('vocab')
+
+btnVocab.addEventListener('click', function() {
+    vocab.style.visibility = 'visible'
 })
