@@ -21,14 +21,14 @@
     justify-content: center;
     align-items: center;
     font-family: 'Bangers';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color:rgb(255, 60, 0);
     text-shadow: 2px 2px 3px rgba(0,0,0, 1);
 }
 
 .score-number {
     font-family: 'Bangers';
-    font-size: 2.5rem;
+    font-size: 2rem;
     color:rgb(0, 255, 21);
     text-shadow: 2px 2px 3px rgba(0,0,0, 1);
 }
@@ -156,12 +156,12 @@
 }
 
 .expression {
-    width: 200px;
+    width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Russo One';
-    margin-left: 180px;
+    margin-left: 190px;
     margin-top: 10px;
     visibility: hidden;
     background-color: rgb(9, 255, 0);
@@ -173,11 +173,13 @@
 
 /* CSS */
 .btnVocab {
+  width: 170px;
   position: absolute;
   border: none;
   background: transparent;
   padding: 0;
-  margin-top: 10px;;
+  margin-top: 10px;
+  margin-left:10px;
   cursor: pointer;
   outline-offset: 4px;
   transition: filter 250ms;
