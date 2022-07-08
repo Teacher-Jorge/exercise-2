@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Bangers';
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color:rgb(255, 60, 0);
     text-shadow: 2px 2px 3px rgba(0,0,0, 1);
 }
@@ -108,6 +108,7 @@
 }
 
 .buttons {
+  cursor: pointer;
     font-family: 'Russo one';
     width: 60px;
     height: 25px;
@@ -145,24 +146,132 @@
             width: 100px;
             height: 50px;
             border-radius: 25px;
-            background-color: rgb(97, 0, 68);
-            box-shadow: 1px 1px 2px;
+            background-color: rgb(63, 0, 44);
+            box-shadow: 3px 3px 5px rgba(0,0,0, 0,5);
             border-style: none;
             transition: 0.3s;
         }
 
         .btn-vocab:hover {
-            transform: scale(1.1);
-            background-color: rgb(255, 0, 212);
-            color:rgb(25, 0, 255);
-            box-shadow: 2px 2px 3px;
+            transform: scale(0.9);
         }
 
         .expression {
             margin: auto;
             margin-left: 140px;
+            margin-top: 10px;
             font-family: 'Russo One';
             visibility: hidden;
             background-color: rgb(9, 255, 0);
             padding: 5px;
+            box-shadow: 1px 1px 2px;
         }
+
+
+
+/* CSS */
+.btnVocab {
+  position: absolute;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-top: 10px;;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btnVocab-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.btnVocab-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    to left,
+    rgb(145, 70, 0) 0%,
+    rgb(138, 39, 0) 8%,
+    rgb(136, 27, 0) 92%,
+    rgb(136, 50, 0) 100%
+  );
+}
+
+.btnVocab-front {
+    font-family: 'Russo One';
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: rgb(36, 0, 0);
+  background: rgb(255, 60, 0);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .btnVocab-front {
+    font-size: 1.25rem;
+    padding: 5px 50px;
+  }
+}
+
+.btnVocab:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.btnVocab:hover .btnVocab-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.btnVocab:active .btnVocab-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.btnVocab:hover .btnVocab-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.btnVocab:active .btnVocab-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.btnVocab:focus:not(:focus-visible) {
+  outline: none;
+}
+
+

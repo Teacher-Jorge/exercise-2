@@ -5,7 +5,9 @@ let btn1Are = document.getElementById('btn1Are')
 let word1 = document.getElementById('word1')
 let check1 = document.getElementById('check1')
 let score = document.getElementById('score')
-let value = score.innerHTML
+let value = 0
+
+
 
 btn1Am.addEventListener('click', function() {
     let audio = document.getElementById('clickSound')
@@ -18,6 +20,14 @@ btn1Am.addEventListener('click', function() {
     btn1Am.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    
 })
 
 btn1Are.addEventListener('click', function() {
@@ -31,6 +41,14 @@ btn1Are.addEventListener('click', function() {
     btn1Are.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+    
 })
 
 btn1Is.addEventListener('click', function() {
@@ -43,6 +61,14 @@ btn1Is.addEventListener('click', function() {
     check1.style.visibility = 'visible'
     value ++
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+
     btn1Is.disabled = 'true'
     btn1Am.disabled = 'true'
     btn1Are.disabled = 'true'
@@ -67,6 +93,13 @@ btn2Is.addEventListener('click', function() {
     btn2Is.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
 })
 
 btn2Are.addEventListener('click', function() {
@@ -80,6 +113,13 @@ btn2Are.addEventListener('click', function() {
     btn2Are.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
 })
 
 btn2Am.addEventListener('click', function() {
@@ -92,6 +132,14 @@ btn2Am.addEventListener('click', function() {
     check2.style.visibility = 'visible'
     value ++
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+
     btn2Is.disabled = 'true'
     btn2Am.disabled = 'true'
     btn2Are.disabled = 'true'
@@ -116,6 +164,13 @@ btn3Am.addEventListener('click', function() {
     btn3Am.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
 })
 
 btn3Are.addEventListener('click', function() {
@@ -129,6 +184,13 @@ btn3Are.addEventListener('click', function() {
     btn3Are.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
 })
 
 btn3Is.addEventListener('click', function() {
@@ -141,6 +203,14 @@ btn3Is.addEventListener('click', function() {
     check3.style.visibility = 'visible'
     value ++
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+
     btn3Is.disabled = 'true'
     btn3Am.disabled = 'true'
     btn3Are.disabled = 'true'
@@ -165,6 +235,13 @@ btn4Am.addEventListener('click', function() {
     btn4Am.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
 })
 
 btn4Is.addEventListener('click', function() {
@@ -178,6 +255,13 @@ btn4Is.addEventListener('click', function() {
     btn4Is.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
 })
 
 btn4Are.addEventListener('click', function() {
@@ -190,6 +274,14 @@ btn4Are.addEventListener('click', function() {
     check4.style.visibility = 'visible'
     value ++
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+
     btn4Is.disabled = 'true'
     btn4Am.disabled = 'true'
     btn4Are.disabled = 'true'
@@ -214,6 +306,13 @@ btn5Is.addEventListener('click', function() {
     btn5Is.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
 })
 
 btn5Are.addEventListener('click', function() {
@@ -239,6 +338,14 @@ btn5Am.addEventListener('click', function() {
     check5.style.visibility = 'visible'
     value ++
     document.getElementById('score').innerHTML = value
+
+    if (value >= 0) {
+        score.style.color = 'lime'
+    }  
+    else {
+        score.style.color = 'red'
+    }
+
     btn5Am.disabled = 'true'
     btn5Is.disabled = 'true'
     btn2Are.disabled = 'true'
@@ -248,7 +355,11 @@ let btnVocab = document.getElementById('btnVocab')
 let vocab = document.getElementById('vocab')
 
 btnVocab.addEventListener('click', function() {
-    let audio = document.getElementById('clickSound')
+    let btnVocabFront = document.getElementById('btn-front')
+    let audio = document.getElementById('correctSound')
     audio.play()
     vocab.style.visibility = 'visible'
+    btnVocabFront.style.background = 'yellow'
+    btnVocab.disabled = 'true'
 })
+
