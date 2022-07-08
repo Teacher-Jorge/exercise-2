@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Bangers';
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color:rgb(255, 60, 0);
     text-shadow: 2px 2px 3px rgba(0,0,0, 1);
 }
@@ -127,45 +127,47 @@
     -webkit-box-shadow: 2px 2px 2px 0px #000000, inset 2px 2px 15px 0px #000000, 2px 2px 0px 2px rgba(0,0,0,0); 
     box-shadow: 2px 2px 2px 0px #000000, inset 2px 2px 50px 0px #000000, 2px 2px 0px 2px rgba(0,0,0,0);
     color:rgb(0, 217, 255)
-        }
+}
 
-        .vocab-container {
-            max-width: 400px;
-            grid-template-columns: 50% 50%;
-            border: rgb(225, 246, 255) 1px solid;
-            justify-content: center;
-            align-items: center;
-        }
+.vocab-container {
+    display: flex;
+    max-width: 400px;
+    grid-template-columns: 50% 50%;
+    border: rgb(225, 246, 255) 1px solid;
+}
 
-        .btn-vocab {
-            font-family: 'Russo One';
-            color: #fff;
-            margin-top: 5px;
-            margin-left: 40px;
-            padding: 5px;
-            width: 100px;
-            height: 50px;
-            border-radius: 25px;
-            background-color: rgb(63, 0, 44);
-            box-shadow: 3px 3px 5px rgba(0,0,0, 0,5);
-            border-style: none;
-            transition: 0.3s;
-        }
+.btn-vocab {
+    font-family: 'Russo One';
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 40px;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(63, 0, 44);
+    box-shadow: 3px 3px 5px rgba(0,0,0, 0,5);
+    border-style: none;
+    transition: 0.3s;
+}
 
-        .btn-vocab:hover {
-            transform: scale(0.9);
-        }
+.btn-vocab:hover {
+    transform: scale(0.9);
+}
 
-        .expression {
-            margin: auto;
-            margin-left: 140px;
-            margin-top: 10px;
-            font-family: 'Russo One';
-            visibility: hidden;
-            background-color: rgb(9, 255, 0);
-            padding: 5px;
-            box-shadow: 1px 1px 2px;
-        }
+.expression {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One';
+    margin-left: 180px;
+    margin-top: 10px;
+    visibility: hidden;
+    background-color: rgb(9, 255, 0);
+    padding: 5px;
+    box-shadow: 1px 1px 2px;
+}
 
 
 

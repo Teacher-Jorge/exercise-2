@@ -89,7 +89,7 @@ btn2Is.addEventListener('click', function() {
     word2.style.color = 'red'
     btn2Is.style.backgroundColor = 'red'
     btn2Is.style.color = 'yellow'
-    check1.style.visibility = 'hidden'
+    check2.style.visibility = 'hidden'
     btn2Is.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
@@ -348,7 +348,7 @@ btn5Am.addEventListener('click', function() {
 
     btn5Am.disabled = 'true'
     btn5Is.disabled = 'true'
-    btn2Are.disabled = 'true'
+    btn5Are.disabled = 'true'
 })
 
 let btnVocab = document.getElementById('btnVocab')
