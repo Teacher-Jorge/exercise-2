@@ -109,7 +109,7 @@ btn2Are.addEventListener('click', function() {
     word2.style.color = 'red'
     btn2Are.style.backgroundColor = 'red'
     btn2Are.style.color = 'yellow'
-    check1.style.visibility = 'hidden'
+    check2.style.visibility = 'hidden'
     btn2Are.disabled = 'true'
     value--
     document.getElementById('score').innerHTML = value
